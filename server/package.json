@@ -7,7 +7,7 @@
   "author": "",
   "license": "MIT",
   "scripts": {
-    "build": "webpack",
+    "build": "npm install",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
   },
