@@ -1,0 +1,27 @@
+.img-thumbnail {
+  width: 35%;
+  height: 35%;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.list-group-item-profile:first-child {
+  border-top: none;
+}
+
+.panel-heading-profile {
+  background-color: #3D5467 !important;
+}
+
+.panel-heading-profile h4 {
+  color: white;
+}
+
+.panel-body-profile,
+.list-group-item-profile {
+  background-color: #F1F4F3;
+}
+
+.font1 {
+  font-family: "Century Gothic","CenturyGothic","AppleGothic",sans-serif;
+}

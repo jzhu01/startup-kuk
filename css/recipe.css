@@ -1,0 +1,114 @@
+.recipe body {
+   background-color:#262626;
+}
+
+.recipe .ingredient-bar {
+   border-right: thin solid #000000;
+   font-size: 1.1em;
+   /*font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;*/
+   font-family: "Century Gothic","CenturyGothic","AppleGothic",sans-serif;
+}
+
+.recipe .instruction-list {
+   font-size: 1.1em;
+   font-family: "Century Gothic","CenturyGothic","AppleGothic",sans-serif;
+   /*font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;*/
+}
+
+.recipe .food-pic {
+   border-color: #074F57;
+   border-width:medium;
+   margin-left: 10px;
+}
+
+.recipe .instruction {
+   padding-bottom: 15px;
+}
+
+.recipe .panel {
+   margin-top: 30px;
+   border-color: #3D5467 !important;
+   border-width: thick !important;
+}
+
+.recipe .panel-footer {
+   background-color: #3D5467;
+}
+
+.recipe .panel-title {
+   font-size: 1.6em;
+   color: #3D5467;
+}
+
+.recipe .social-but, .time-icons {
+   color: #3D5467;
+}
+
+.recipe .favButton, .calButton {
+   color: white !important;
+   padding-bottom: 10px;
+}
+
+.recipe .fa-star {
+   color: #9C102E;
+}
+
+.recipe .panel-heading2 {
+  background-color: white !important;
+  padding: 10px 10px 10px 10px;
+}
+
+
+.recipe .dropdown-submenu {
+    position: relative;
+}
+
+.recipe .dropdown-submenu>.dropdown-menu {
+    top: 0;
+    left: -100%;
+    margin-top: -6px;
+    margin-left: -1px;
+    -webkit-border-radius: 0 6px 6px 6px;
+    -moz-border-radius: 0 6px 6px;
+    border-radius: 0 6px 6px 6px;
+}
+
+.recipe .dropdown-submenu:hover>.dropdown-menu {
+    display: block;
+}
+
+.recipe .dropdown-submenu>a:after {
+    display: block;
+    content: " ";
+    float: left;
+    width: 0;
+    height: 0;
+    border-color: transparent;
+    border-style: solid;
+    border-width: 5px 0 5px 5px;
+    border-left-color: #ccc;
+    margin-top: 5px;
+    margin-right: 10px;
+    -webkit-transform: rotate(180deg);
+    transform:rotate(180deg);
+}
+
+.recipe .dropdown-submenu:hover>a:after {
+    border-left-color: #fff;
+}
+
+.recipe .dropdown-submenu .pull-left {
+    float: none;
+}
+
+.recipe .dropdown-submenu.pull-left>.dropdown-menu {
+    left: -100%;
+    margin-left: 10px;
+    -webkit-border-radius: 6px 0 6px 6px;
+    -moz-border-radius: 6px 0 6px 6px;
+    border-radius: 6px 0 6px 6px;
+}
+
+.recipe .dropdown-menu .dropdown-submenu {
+   /*padding-left:100px;*/
+}

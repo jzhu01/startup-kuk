@@ -1,0 +1,123 @@
+/*
+#9C102E red
+#686963 grey
+#9cb0ad seagreen (navbar)
+#3D5467 dark blue
+#EAD4A7 cream
+#c6d2d0 background color (lighter green)
+*/
+
+.favorites a:link {color: #3D5467; text-decoration: none; }
+.favorites a:active {color: #3D5467; text-decoration: none; }
+.favorites a:visited {color: #686963; text-decoration: none; }
+.favorites a:hover {color: #9cb0ad; text-decoration: none; }
+
+.favorites .thumbnail {
+  background-color: #c6d2d0;
+  float:left;
+  border-bottom: 20px;
+  border: 0px;
+  display: inline;
+  margin-left: 20px;
+  margin-right:20px;
+  width:auto;
+  padding-left: 30px;
+}
+
+.favorites .font1 {
+  padding-left: 60px;
+}
+
+.favorites .heartspace {
+  position: absolute;
+  bottom: 8px;
+  left:43%;
+}
+
+.favorites .imagespace:hover img{
+    opacity: 0.4;
+}
+
+.favorites .imagespace:hover .heartspace{
+  display: inline;
+}
+
+.favorites .imagespace .heartspace{
+    display: none;
+}
+
+.favorites .mini-listing.button {
+    font-size: 14px;
+    margin-top: -5px;
+    padding: 5px 7px;
+}
+.favorites a.button {
+    border-radius: 3px 3px 3px 3px;
+    color: #FFFFFF;
+    cursor: pointer;
+    display: inline-block;
+    font-family: "proxima-nova-1","proxima-nova-2",Helvetica,Arial,sans-serif;
+    font-weight: bold;
+    line-height: 1;
+    padding: 9px 34px;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.favorites .red {
+    background: none repeat scroll 0 0 #9C102E;
+}
+
+#favoriteslisting {
+  padding-right:200px;
+  padding-top: 10px;
+  margin-top:10px;
+}
+
+.favorites .buttonspace {
+  padding: 10px;
+  padding-bottom: 40px;
+}
+
+.favorites .font1 {
+  font-family: "Century Gothic","CenturyGothic","AppleGothic",sans-serif;
+  padding: 20px;
+}
+
+.favorites h5 {
+  text-align: center;
+}
+
+.favorites .croppedimg {
+  width: 160px;
+  height: 120px;
+  overflow: hidden;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.favorites .menubutton {
+  background-color: #9C102E !important;
+  color: #c6d2d0 !important;
+  border: none;
+  background: none;
+}
+
+.favorites .menubutton:hover {
+  opacity: 0.4;
+}
+
+.favorites .dropdown-menu {
+  background-color: #9C102E !important;
+}
+
+#filter {
+  padding-top: 20px;
+  padding-left: 50px;
+  padding-right: 10px;
+  border-right: 1px solid #ededed;
+  height: 500px;
+}

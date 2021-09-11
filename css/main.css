@@ -1,0 +1,154 @@
+body {
+  padding-top: 70px;
+  background-color: #c6d2d0;
+}
+
+/* NAVBAR */
+.navbar {
+  background-color: #9cb0ad;
+  border: none;
+  margin-bottom: 0;
+}
+
+.navbar-left button {
+  border-top: none;
+}
+
+.navbar-brand {
+  padding-top: 7px;
+}
+
+.navbar-default .navbar-nav>li>a {
+    color: #3D5467;
+    padding-right: 3px;
+}
+
+.presentation {
+  padding: 5px 0px;
+}
+
+.kuk-search {
+  border-radius: 20px;
+}
+
+#logo {
+  height: 40px;
+  padding: 0px;
+  margin: 0;
+}
+
+.btn {
+  background-color: #9C102E !important;
+  color: #c6d2d0 !important;
+  margin-left: 5%;
+  border: none;
+}
+
+.navbar .dropdown-toggle {
+  border: none;
+  padding-top: 7px;
+  padding-bottom: 8px;
+}
+
+.navbar .searchButton {
+  padding-bottom: 8px;
+  padding-top: 7px;
+}
+
+.center {
+  text-align: center;
+  font-family: 'Alegreya Sans SC', sans-serif;
+  font-weight: bold;
+  padding: 40px;
+  padding-bottom: 10px;
+  color: #9C102E;
+}
+
+.panel {
+  height: 100%;
+  border: none;
+}
+
+.panel-heading {
+  background-color: #3D5467 !important;
+  border-radius: 0;
+}
+
+.panel-heading h4 {
+  color: white;
+}
+
+.panel-body,
+.list-group-item {
+  background-color: #F1F4F3;
+}
+
+h2 {
+  color: #9C102E;
+}
+
+.font1 {
+  font-family: "Century Gothic","CenturyGothic","AppleGothic",sans-serif;
+}
+
+.sidefilter {
+  padding-top: 60px;
+}
+
+/* Sidebar Styles */
+.sidebar-nav {
+    position: absolute;
+    top: 0;
+    width: 250px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    border: none;
+}
+
+.panel{
+    height: 100%;
+}
+
+.sidebar-nav li {
+    text-indent: 20px;
+    line-height: 40px;
+}
+
+.sidebar-nav li a {
+    display: block;
+    text-decoration: none;
+    color: #999999;
+}
+
+.sidebar-brand h4 {
+  padding-left: 20px;
+}
+
+.sidebar-nav > .sidebar-brand {
+    height: 65px;
+    font-size: 18px;
+    line-height: 60px;
+}
+
+.sidebar-nav > .sidebar-brand a {
+    color: #999999;
+}
+
+/** 404 Page Not Found **/
+img .404 !important{
+    padding-top: 50px;
+}
+/** ----------------- **/
+
+#db-reset {
+  position: fixed;
+  bottom: 5%;
+  right: 4%;
+}
+
+@media(max-width:768px) {
+  #sidebar-wrapper {
+    margin-top: -10px;
+  }
+}

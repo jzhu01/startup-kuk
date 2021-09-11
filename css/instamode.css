@@ -1,0 +1,88 @@
+.instamode .main-content {
+    background-color: #F1F4F3;
+    margin: 1em;
+    padding: 2em;
+    border-radius: 30px 30px 30px 30px;
+}
+
+.instamode .container h1 {
+  margin: 0px;
+  color: #9c102e;
+  /*padding-bottom: 0.5em;*/
+}
+
+.instamode .container {
+  margin:auto;
+  width: 80%;
+}
+
+.instamode .container-row {
+  width:90%;
+}
+
+.instamode .enter-ingredients {
+  width: 505px !important;
+  padding: 5px;
+  margin:auto;
+  width: 50%;
+  border-radius: 30px 30px 30px 30px;
+  border-color: #ccc;
+  margin-bottom:0.75em;
+  background-color: white;
+  color: #686963;
+  padding-left: 15px;
+}
+
+.instamode .enter-ingredients: focus {
+  border: none;
+}
+
+.instamode .description {
+  padding-bottom: 0.5em;
+  font-style: italic;
+  color:#686963;
+  font-size: 17px;
+}
+
+.instamode .ingredients-search {
+  margin: auto;
+  width:85%;
+}
+
+.instamode .ingredients-box {
+  margin: auto;
+  width:95%;
+  background-color: white;
+  border-radius: 30px 30px 30px 30px;
+  border: 1px solid #ccc;
+  padding: 20px;
+  padding-bottom:7em;
+  margin-bottom: 1em;
+}
+
+.instamode .ingredient {
+  font-size: 15px;
+  /*border: 1px solid #9c102e;*/
+  color: white;
+  background-color: #8aa29e;
+  border-radius: 30px 30px 30px 30px;
+  padding: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin: 5px;
+}
+
+.instamode .findrecipe-btn{
+  border-radius: 30px 30px 30px 30px;
+  margin-top: 1em;
+  border: none;
+  background-color: #9c102e;
+  padding:0.5em;
+  padding-left: 1em;
+  padding-right: 1em;
+}
+
+.instamode #logo2{
+  width:10%;
+  height:10%;
+}

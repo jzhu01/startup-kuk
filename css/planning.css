@@ -1,0 +1,153 @@
+/*
+#9C102E red
+#686963 grey
+#9cb0ad seagreen (navbar)
+#3D5467 dark blue
+#EAD4A7 cream
+#c6d2d0 background color (lighter green)
+*/
+
+.btn-transparent {
+  background:none;
+  border:none;
+  box-shadow:none;
+  position:relative;
+  text-align: center;
+  }
+.days {
+  font-size: 15px;
+}
+.onImage {
+  position:relative;
+  top:-120px;
+  right:-130px;
+  text-align:left;
+  display:block;
+  font-size: 15px;
+}
+
+table.table td img{
+    width: 80%;
+    height: auto;
+}
+
+table {
+    table-layout: fixed;
+    word-wrap: break-word;
+    text-align: center;
+}
+
+.navbar {
+background-color: #9cb0ad;
+}
+
+.table-nonfluid {
+   width: 80% !important;
+   margin: 0 auto !important;
+   float: none !important;
+
+}
+
+table th {
+  text-align: center;
+}
+
+table thead {
+  background-color: #3D5467;
+  /*background-color: (100, 100, 100, 0)*/
+  color: #c6d2d0;
+}
+
+table .heading {
+  background-color: #3D5467;
+  color: #c6d2d0;
+}
+
+table td {
+  background-color: #c6d2d0;
+  font-family: "Century Gothic","CenturyGothic","AppleGothic",sans-serif;
+}
+
+h2 {
+  color: #9C102E;
+}
+
+body {
+  padding-top: 60px;
+  background-color: #c6d2d0;
+}
+
+.btn-toolbar {
+  margin-top: 0;
+  margin-bottom: 35px;
+}
+
+.btn-toolbar .btn {
+    background-color: #9C102E;
+    color: #c6d2d0;
+}
+
+.wrapper ul {
+  list-style: none;
+  line-height: normal;
+}
+
+.day>li {
+    display: inline-block;
+    padding-right: 5px;
+    margin-bottom: -75px;
+    padding-left: 5px;
+}
+
+.day {
+    padding-bottom: 100px;
+}
+
+.calender-divider {
+  border-top: 1px solid #000;
+}
+
+.mealtypes {
+  font-size: 15px;
+  padding: 20px 150px;
+}
+
+.mealtypes li:first-child {
+  padding-right: 170px;
+}
+
+.mealtypes li:nth-child(2) {
+  padding-right: 185px;
+}
+
+.mealtypes li:nth-child(3) {
+  padding-right: 187px;
+}
+
+.Mon {
+  padding-right: 22px;
+}
+
+.Tues {
+  padding-right: 20px;
+}
+
+.Wed {
+  padding-right: 0px;
+}
+
+.Thur {
+  padding-right: 18px;
+}
+
+.Fri {
+  padding-right: 40px;
+}
+
+.Sat {
+  padding-right: 20px;
+}
+
+.Sun {
+  padding-right: 30px;
+}
