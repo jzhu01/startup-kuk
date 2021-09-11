@@ -1,4 +1,5 @@
 {
+  "homepage": "http://jzhu01.github.io/startup-kuk",
   "name": "team-project-client",
   "version": "0.0.1",
   "description": "Build support for the client-side of CS326 projects.",
@@ -6,7 +7,9 @@
   "license": "MIT",
   "scripts": {
     "serve": "webpack-dev-server --content-base build",
-    "watch": "webpack --watch"
+    "watch": "webpack --watch",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "devDependencies": {
     "babel": "^6.3.26",
@@ -16,6 +19,7 @@
     "babel-preset-react": "^6.3.13",
     "eslint": "^1.10.3",
     "eslint-plugin-react": "^3.14.0",
+    "gh-pages": "^3.2.3",
     "react": "^0.14.6",
     "react-dom": "^0.14.6",
     "react-router": "^2.0.0",
