@@ -67,7 +67,7 @@ function sendXHR(verb, resource, body, cb) {
 }
 
 export function removeRecipefromCalendar(userid, week, day, meal, cb) {
-  sendXHR('DELETE', '/user/' + userid + '/calendar/' + week + "/" + day + "/" + meal, undefined, (xhr) => {
+  sendXHR('DELETE', '/api/user/' + userid + '/calendar/' + week + "/" + day + "/" + meal, undefined, (xhr) => {
         // Call the callback with the data.
         cb(JSON.parse(xhr.responseText));
       });
@@ -75,7 +75,7 @@ export function removeRecipefromCalendar(userid, week, day, meal, cb) {
 
 
 export function getProfileCalendarData(userid, week, cb) {
-  sendXHR('GET', '/user/' + userid + '/calendar/' + week, undefined, (xhr) => {
+  sendXHR('GET', '/api/user/' + userid + '/calendar/' + week, undefined, (xhr) => {
     // Call the callback with the data.
     cb(JSON.parse(xhr.responseText));
   });
@@ -87,7 +87,7 @@ export function getProfileCalendarData(userid, week, cb) {
  * Calls cb on a UserData object that is resolved except for the restriction references.
  */
 export function getProfileData(user, cb) {
-  sendXHR('GET', '/user/' + user, undefined, (xhr) => {
+  sendXHR('GET', '/api/user/' + user, undefined, (xhr) => {
     // Call the callback with the data.
     cb(JSON.parse(xhr.responseText));
   });
@@ -99,7 +99,7 @@ export function getProfileData(user, cb) {
 
 export function getRecipe(recipeId, cb) {
    var xhr = new XMLHttpRequest();
-   xhr.open("GET", "/recipe/" + recipeId);
+   xhr.open("GET", "/api/recipe/" + recipeId);
    xhr.addEventListener("load", function(){
       cb(JSON.parse(xhr.responseText));
    });
@@ -111,7 +111,7 @@ export function getRecipe(recipeId, cb) {
  * @param cb The callback function to be called at the end
  */
 export function getUserRestrictions(user, cb) {
-  sendXHR('GET', '/user/' + user + '/restriction', undefined, (xhr) => {
+  sendXHR('GET', '/api/user/' + user + '/restriction', undefined, (xhr) => {
     cb(JSON.parse(xhr.responseText));
   })
 }
@@ -124,7 +124,7 @@ export function getUserRestrictions(user, cb) {
  * and the checkbox.
  */
 export function addUserRestriction(restrictionId, userId, cb) {
-  sendXHR('PUT', '/user/' + userId + '/restriction/' + restrictionId, undefined, (xhr) => {
+  sendXHR('PUT', '/api/user/' + userId + '/restriction/' + restrictionId, undefined, (xhr) => {
     cb(JSON.parse(xhr.responseText));
   });
 }
@@ -136,7 +136,7 @@ export function addUserRestriction(restrictionId, userId, cb) {
  * Calls cb on the user's modified restrictions array (unresolved)
  */
 export function removeUserRestriction(restrictionId, userId, cb) {
-  sendXHR('DELETE', '/user/' + userId + '/restriction/' + restrictionId, undefined, (xhr) => {
+  sendXHR('DELETE', '/api/user/' + userId + '/restriction/' + restrictionId, undefined, (xhr) => {
     cb(JSON.parse(xhr.responseText));
   });
 }
@@ -147,7 +147,7 @@ export function removeUserRestriction(restrictionId, userId, cb) {
  * restrictions, based on whether or not the user has an account.
  */
 export function getCurrentUserRestrictions(cb) {
-  sendXHR('GET', '/user/restrictions', undefined, (xhr) => {
+  sendXHR('GET', '/api/user/restrictions', undefined, (xhr) => {
     cb(JSON.parse(xhr.responseText));
   });
 }
@@ -158,7 +158,7 @@ export function getCurrentUserRestrictions(cb) {
  * Emulates a REST call to get the feed data for a particular user.
  */
 export function getFeedData(restrictions, cb) {
-  sendXHR('PUT','/feed/', restrictions, (xhr) => {
+  sendXHR('PUT','/api/feed/', restrictions, (xhr) => {
     cb(JSON.parse(xhr.responseText));
   });
 }
@@ -167,7 +167,7 @@ export function getFeedData(restrictions, cb) {
  * Returns an array of the recipes whose names match the searched keyword.
  */
 export function findRecipe(searchText, cb) {
-  sendXHR('POST', '/results', searchText, (xhr) => {
+  sendXHR('POST', '/api/results', searchText, (xhr) => {
     cb(JSON.parse(xhr.responseText));
   });
 }
@@ -176,7 +176,7 @@ export function findRecipe(searchText, cb) {
  * Returns an array of the recipes whose ids match the list of recipe ids.
  */
 export function findRecipesFromId(userId,recipeIDs, cb) {
-  sendXHR('GET', '/user/' + userId + '/favorites/', undefined, (xhr) => {
+  sendXHR('GET', '/api/user/' + userId + '/favorites/', undefined, (xhr) => {
         // Call the callback with the data.
         cb(JSON.parse(xhr.responseText));
       });
@@ -186,7 +186,7 @@ export function findRecipesFromId(userId,recipeIDs, cb) {
 * The function that adds recipes to the user's list of favorites
 */
 export function addFavorite(recipeId, userId, cb) {
-   sendXHR("PUT", "/recipe/" + recipeId + "/favorites/user/" + userId, undefined, (xhr) => {
+   sendXHR("PUT", "/api/recipe/" + recipeId + "/favorites/user/" + userId, undefined, (xhr) => {
       cb(JSON.parse(xhr.responseText));
    });
 }
@@ -195,7 +195,7 @@ export function addFavorite(recipeId, userId, cb) {
 * The function that removes recipes from the user's list of favorites
 */
 export function removeFavorite (recipeId, userId, cb) {
-   sendXHR("DELETE", "/recipe/" + recipeId + "/favorites/user/" + userId, undefined, (xhr) => {
+   sendXHR("DELETE", "/api/recipe/" + recipeId + "/favorites/user/" + userId, undefined, (xhr) => {
       cb(JSON.parse(xhr.responseText));
    });
 }
@@ -205,7 +205,7 @@ export function removeFavorite (recipeId, userId, cb) {
  * @param cb The callback function to be called at the end
  */
 export function checkUserFavorites(recipeId, userId, cb) {
-   sendXHR("GET", "/recipe/" + recipeId + "/favorites/check/user/" + userId, undefined, (xhr) => {
+   sendXHR("GET", "/api/recipe/" + recipeId + "/favorites/check/user/" + userId, undefined, (xhr) => {
       cb(JSON.parse(xhr.responseText));
    });
 }
@@ -215,7 +215,7 @@ export function checkUserFavorites(recipeId, userId, cb) {
 * and the day you want to add the recipe to
 */
 export function addRecipeToCalendar(recipeId, userId, week, day, meal, cb) {
-   sendXHR("PUT", "/recipe/" +recipeId+ "/user/" +userId+ "/calendar/" + week + "/"+ day + "/"+ meal, undefined, (xhr) => {
+   sendXHR("PUT", "/api/recipe/" +recipeId+ "/user/" +userId+ "/calendar/" + week + "/"+ day + "/"+ meal, undefined, (xhr) => {
       cb(JSON.parse(xhr.responseText));
    });
 
@@ -226,7 +226,7 @@ export function addRecipeToCalendar(recipeId, userId, week, day, meal, cb) {
 * list based on the calendar.
 */
 export function getShoppingList(userId, cb) {
-   sendXHR("GET", "/user/" +userId + "/shoppingList/",
+   sendXHR("GET", "/api/user/" +userId + "/shoppingList/",
    undefined, (xhr) => {
       cb(JSON.parse(xhr.responseText));
    })
@@ -246,7 +246,7 @@ export function findRecipeByIngredients(ingredientsList, cb) {
         ingredientString += '='+ingredientsList[i];
       }
     }
-    sendXHR("POST", '/instaresults/'+ ingredientString, undefined, (xhr) => {
+    sendXHR("POST", '/api/instaresults/'+ ingredientString, undefined, (xhr) => {
       cb(JSON.parse(xhr.responseText));
     })
 }
@@ -264,7 +264,7 @@ export function findRecipeByOnlyIngredients(ingredientsList, cb) {
       ingredientString += '='+ingredientsList[i];
     }
   }
-  sendXHR("POST", '/instaresults/ingredientsONLY/'+ ingredientString, undefined, (xhr) => {
+  sendXHR("POST", '/api/instaresults/ingredientsONLY/'+ ingredientString, undefined, (xhr) => {
     cb(JSON.parse(xhr.responseText));
   })
 }
