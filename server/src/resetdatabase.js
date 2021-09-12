@@ -66,7 +66,7 @@ var initialData = {
        "instructions": ["Whisk onion, soy sauce, brown sugar, garlic, sesame oil, sesame seeds, cayenne pepper, salt, and black pepper together in a bowl until marinade is smooth.", "Cook and stir chicken and marinade together in a large skillet over medium-high heat until chicken is cooked through, about 15 minutes."],
        "time": "30 mins",
        "restrictions": [new ObjectID("000000000000000000000004"), new ObjectID("000000000000000000000008")],
-       "img": "http://www.chowstatic.com/assets/recipe_photos/25679_korean_grilled_chicken.jpg",
+       "img": "https://2eop542t07t01mrvr820wpp0-wpengine.netdna-ssl.com/wp-content/uploads/2019/12/Bulgogi-Skillet-Main-Image-1-800x450.jpg",
        "description":"A Korean dish renowened for its simplicity and flavor"
      },
 
@@ -132,7 +132,7 @@ var initialData = {
        "instructions": ["In a sauce pan heat canola oil to approximately 325 degrees using a candy thermometer (if you do not have a candy thermometer, keep the oil over a medium high heat).", "Place the egg roll skins into the hot oil one at a time, flipping them when hey become crisply. Remove from the oil and set on a paper towel to drip dry.", "Fill a sauce pan with enough water to cover the shrimp and bring it to a simmer.", "Add Old Bay seasoning, juice of 1 lemon and bay leaves.", "Bring back up to a simmer and add the rock shrimp. The rock shrimp should only take about 5–7 minutes to poach.", "Strain the shrimp from the water and rapidly cool under cold water. Set aside.", "Blend ketchup in a mixing bowl with horseradish, juice of 1 lemon and 1 tablespoon of Worcestershire sauce.", "Toss the shrimp in your cocktail sauce and place them on top of wonton discs. Garnish with chive and candied lemon zest."],
        "time": "20 mins",
        "restrictions": [new ObjectID("000000000000000000000002"), new ObjectID("000000000000000000000007")],
-       "img": "http://saltlakemagazine.com/site_media/uploads/February2014/shrimpcocktails99.jpg",
+       "img": "https://food.fnr.sndimg.com/content/dam/images/food/fullset/2004/4/21/0/bw2b09_shrimp_cocktail.jpg.rend.hgtvcom.826.620.suffix/1557928675507.jpeg",
        "description": "Surprise your guests with this delicioso appetizer"
     },
     "10": {
@@ -145,7 +145,7 @@ var initialData = {
        "instructions": ["Heat olive oil in a large skillet over medium heat; cook and stir asparagus and red bell pepper until the vegetables start to soften, about 3 minutes. Stir in cherry tomatoes, spinach, garlic, oregano, basil, and salt and continue cooking until tomatoes are soft and spinach has cooked down, another 3 to 5 minutes. Remove from heat and transfer vegetables to a plate.", "Melt butter in clean skillet over medium heat. Whisk eggs and milk in a bowl and pour into hot butter, swirling skillet to cover entire bottom with egg mixture. Pull up an edge of the omelet with a spatula and tilt pan to allow unset egg to run underneath and cook; continue around pan, lifting omelet edge and tilting pan, until all the egg mixture is set. Sprinkle omelet with salt.", "Spoon cooked asparagus mixture onto one side of the omelet and sprinkle with feta and Cheddar cheeses. Gently fold half the omelet over the vegetables and cheese and press edges lightly to seal in the filling. Cook until filling is hot and Cheddar cheese has melted, 1 to 2 more minutes. Cut in slices to serve."],
        "time": "30 mins",
        "restrictions": [new ObjectID("000000000000000000000001"), new ObjectID("000000000000000000000002")],
-       "img": "http://hungryjackpotatoes.com/wp-content/uploads/2013/04/omlet.jpg",
+       "img": "https://bigoven-res.cloudinary.com/image/upload/h_320,w_320,c_fill/easy-greek-omelet-c05a32.jpg",
        "description": "This omelet is filled with a mixture of cherry tomatoes, spinach, bell pepper, and asparagus"
     },
     "11": {
@@ -171,7 +171,7 @@ var initialData = {
        "instructions": ["Preheat oven to 340 Fahrenheit.", "Warm milk to body temperature. Butter and milk at room temperature. Shift dry ingredients together.", "Beat butter until fluffy. Add sugar and beat. Add beaten egg slowly, and then add warmed milk slowly until combined well.", "Pour the batter into muffin pan. Insert chunked chocolate into the batter.", "Bake for about 25 minutes."],
        "time": "1 hr",
        "restrictions": [new ObjectID("000000000000000000000001"), new ObjectID("000000000000000000000002"), new ObjectID("000000000000000000000005")],
-       "img": "http://cdn.cooksnaps.com/media/W1siZiIsIjIwMTQvMDcvMDYvMjNfMDlfMjdfNDAzXzcyZTQ4NGU2MTk5NDBlYTMzMWE1MjQxNjBhMzFlNGVlIl0sWyJwIiwiY29udmVydCIsIi1hdXRvLW9yaWVudCJdLFsicCIsInRodW1iIiwiNjQweDUwMCMiXSxbImUiLCJqcGciLCItc3RyaXAgLXF1YWxpdHkgODAiXV0.jpg",
+       "img": "https://www.chopstickchronicles.com//wp-content/uploads/2021/03/Matcha-Muffin-29.jpg",
        "description": "A delicious, rich muffin with the essence of green tea"
     },
     "13": {

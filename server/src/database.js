@@ -63,7 +63,7 @@ var initialData = {
        "instructions": ["Whisk onion, soy sauce, brown sugar, garlic, sesame oil, sesame seeds, cayenne pepper, salt, and black pepper together in a bowl until marinade is smooth.", "Cook and stir chicken and marinade together in a large skillet over medium-high heat until chicken is cooked through, about 15 minutes."],
        "time": "30 mins",
        "restrictions": [4,8],
-       "img": "http://www.chowstatic.com/assets/recipe_photos/25679_korean_grilled_chicken.jpg",
+       "img": "https://2eop542t07t01mrvr820wpp0-wpengine.netdna-ssl.com/wp-content/uploads/2019/12/Bulgogi-Skillet-Main-Image-1-800x450.jpg",
        "description":"A Korean dish renowened for its simplicity and flavor"
      },
 
