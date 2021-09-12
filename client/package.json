@@ -1,5 +1,4 @@
 {
-  "homepage": "http://jzhu01.github.io/startup-kuk",
   "name": "team-project-client",
   "version": "0.0.1",
   "description": "Build support for the client-side of CS326 projects.",
@@ -7,10 +6,7 @@
   "license": "MIT",
   "scripts": {
     "serve": "webpack-dev-server --content-base build",
-    "watch": "webpack --watch",
-    "build": "webpack",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "watch": "webpack --watch"
   },
   "devDependencies": {
     "babel": "^6.3.26",

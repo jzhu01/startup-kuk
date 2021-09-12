@@ -5,6 +5,9 @@
   "main": "index.js",
   "author": "",
   "license": "MIT",
+  "scripts": {
+    "start": "node src/server.js"
+  },
   "dependencies": {
     "async": "^1.5.2",
     "body-parser": "^1.15.0",
